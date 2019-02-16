@@ -74,7 +74,8 @@
             android:background="@drawable/button_3d"
             android:text="@string/ingresar"
             android:textAllCaps="false"
-            android:textColor="#ffffff" />
+            android:textColor="#ffffff"
+            />
 
 
     </LinearLayout>

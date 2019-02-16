@@ -23,16 +23,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.google.gson.Gson;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.tavasolutions.dto.RequestDTO;
 import com.tavasolutions.dto.UserDTO;
 import com.tavasolutions.enums.EnumProfile;
+import com.tavasolutions.fragments.FragmentAddRequestFrontDesk;
 import com.tavasolutions.fragments.FragmentRequestLobby;
+import com.tavasolutions.fragments.NoResultsFragment;
 import com.tavasolutions.util.HttpUtil;
 import com.tavasolutions.util.Variable;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import cz.msebera.android.httpclient.Header;
 
@@ -172,7 +180,24 @@ public class MainActivity extends AppCompatActivity
 
                         if (statusCode==200){
 
-                            Toast.makeText(MainActivity.this, "response!!!", Toast.LENGTH_SHORT).show();
+                            Gson gson= new Gson();
+
+                            RequestDTO[] arr = gson.fromJson(response.toString(), RequestDTO[].class);
+                            List rooms  = new ArrayList(Arrays.asList(arr));
+
+                            if (!rooms.isEmpty()){
+                                getSupportFragmentManager()
+                                        .beginTransaction()
+                                        .replace(R.id.root,new FragmentAddRequestFrontDesk(), FragmentAddRequestFrontDesk.class.getSimpleName())
+                                        .addToBackStack("addRequest")
+                                        .commit();
+                            }else{
+                                getSupportFragmentManager()
+                                        .beginTransaction()
+                                        .replace(R.id.root,new NoResultsFragment(), NoResultsFragment.class.getSimpleName())
+                                        .addToBackStack("noResult")
+                                        .commit();
+                            }
 
                             return;
                         }

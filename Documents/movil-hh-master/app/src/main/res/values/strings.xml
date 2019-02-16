@@ -613,5 +613,12 @@
     <string name="fa_subway">&#xf239;</string>
     <string name="fa_medium">&#xf23a;</string>
     <string name="menu_search">Search Room</string>
+    <string name="add_request">Add Request</string>
+    <string name="department">Department</string>
+    <string name="request">Request</string>
+    <string name="note">Note</string>
+    <string name="yes">Yes</string>
+    <string name="delay">Delay</string>
+    <string name="ingresar">Ingresar</string>
 
 </resources>
