@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    -->
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorAccent">#4DB6AC</color>
+
+    <!-- hotel -->
+
+    <color name="white">#343a40</color>
+    <!--
+        <color name="gray_dark">#343a40</color>
+        <color name="gray">#343a40</color>
+        <color name="secondary">#343a40</color>
+        <color name="background">#e4e7e8</color>
+        <color name="white">#343a40</color>
+    -->
+<!--
+    <color name="gray_dark">#009688</color>
+    <color name="gray">#00695C</color>
+    <color name="secondary">#4DB6AC</color>
+    <color name="background">#00695C</color>
+    <color name="white">#FFFFFF</color>
+-->
+</resources>

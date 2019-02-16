@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/menu_hkp"
+        android:title="Housekeeping"
+        android:icon="@drawable/menu_exclamation">
+        <menu>
+            <item
+                android:id="@+id/menu_hkp_requests"
+                android:icon="@drawable/menu_request"
+                android:title="Requests" />
+            <item
+                android:id="@+id/menu_hkp_settings"
+                android:title="Settings"
+                android:icon="@drawable/menu_settings"
+                />
+            <item
+                android:id="@+id/menu_hkp_issues_hkp"
+                android:checkableBehavior="single"
+                android:visible="false"
+                android:title="Issues Housekeeping" />
+            <item
+                android:id="@+id/menu_hkp_issues_main"
+                android:visible="false"
+                android:title="Issues Maintenance" />
+
+        </menu>
+    </item>
+
+    <item android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@drawable/menu_housekeeping">
+        <menu>
+            <item
+                android:id="@+id/menu_parameters"
+                android:icon="@drawable/menu_parameters"
+                android:title="Parameters" />
+            <item
+                android:id="@+id/menu_users"
+                android:title="Users"
+                android:icon="@drawable/menu_users" />
+
+        </menu>
+    </item>
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
