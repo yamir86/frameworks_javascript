@@ -5,8 +5,9 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     -->
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00695C</color>
+    <color name="colorPrimary">#1566e0</color>
+    <color name="colorPrimaryDark">#003DAD</color>
+    <color name="colorPrimaryLight">#6693ff</color>
     <color name="colorAccent">#4DB6AC</color>
 
     <!-- hotel -->

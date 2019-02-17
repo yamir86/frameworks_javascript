@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -44,7 +45,7 @@ public class Login extends AppCompatActivity {
     private Toolbar toolbar;
     private EditText inputName,  inputPassword;
     private TextInputLayout inputLayoutName, inputLayoutPassword;
-    private Button btn_loguearse;
+    private TextView btn_loguearse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +73,9 @@ public class Login extends AppCompatActivity {
 
         inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_usuario);
         inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
-        inputName = (EditText) findViewById(R.id.input_usuario);
-        inputPassword = (EditText) findViewById(R.id.input_password);
-        btn_loguearse = (Button) findViewById(R.id.btn_loguearse);
+        inputName = (EditText) findViewById(R.id.username_input);
+        inputPassword = (EditText) findViewById(R.id.pass);
+        btn_loguearse = findViewById(R.id.btn_loguearse);
 
         inputName.addTextChangedListener(new MyTextWatcher(inputName));
         inputPassword.addTextChangedListener(new MyTextWatcher(inputPassword));
@@ -97,6 +98,8 @@ public class Login extends AppCompatActivity {
         if (!validatePassword()) {
             return;
         }
+
+        Log.e(Login.class.getSimpleName(), "submitForm: VALIDATIONS SUCCEDED!! " );
 
 
         RequestParams rp = new RequestParams();
@@ -160,11 +163,11 @@ public class Login extends AppCompatActivity {
 
     private boolean validateName() {
         if (inputName.getText().toString().trim().equals("")) {
-            inputLayoutName.setError(getString(R.string.err_msg_name));
+            inputName.setError(getString(R.string.err_msg_name));
             requestFocus(inputName);
             return false;
         } else {
-            inputLayoutName.setErrorEnabled(false);
+            inputName.setError(null);
         }
 
         return true;
@@ -174,11 +177,11 @@ public class Login extends AppCompatActivity {
 
     private boolean validatePassword() {
         if (inputPassword.getText().toString().trim().equals("")) {
-            inputLayoutPassword.setError(getString(R.string.err_msg_password));
+            inputPassword.setError(getString(R.string.err_msg_password));
             requestFocus(inputPassword);
             return false;
         } else {
-            inputLayoutPassword.setErrorEnabled(false);
+            inputPassword.setError(null);
         }
 
         return true;

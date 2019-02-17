@@ -160,69 +160,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        final MenuItem searchItem = menu.findItem(R.id.menu_search);
-        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-        //permite modificar el hint que el EditText muestra por defecto
-        searchView.setQueryHint(getText(R.string.menu_search));
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
 
-                Log.e(MainActivity.class.getSimpleName(), "onQueryTextSubmit: "+ searchView.getQuery() );
-                RequestParams rp = new RequestParams();
-                rp.add("mod", "validateRoomNumber");
-                rp.add("roomNumber", searchView.getQuery().toString());
-
-
-                HttpUtil.get( "requests.php",rp,new JsonHttpResponseHandler() {
-                    @Override
-                    public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-
-                        if (statusCode==200){
-
-                            Gson gson= new Gson();
-
-                            RequestDTO[] arr = gson.fromJson(response.toString(), RequestDTO[].class);
-                            List rooms  = new ArrayList(Arrays.asList(arr));
-
-                            if (!rooms.isEmpty()){
-                                getSupportFragmentManager()
-                                        .beginTransaction()
-                                        .replace(R.id.root,new FragmentAddRequestFrontDesk(), FragmentAddRequestFrontDesk.class.getSimpleName())
-                                        .addToBackStack("addRequest")
-                                        .commit();
-                            }else{
-                                getSupportFragmentManager()
-                                        .beginTransaction()
-                                        .replace(R.id.root,new NoResultsFragment(), NoResultsFragment.class.getSimpleName())
-                                        .addToBackStack("noResult")
-                                        .commit();
-                            }
-
-                            return;
-                        }
-
-                    }
-
-                    @Override
-                    public void  onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
-                        //throwable.printStackTrace();
-                         Toast.makeText(getApplicationContext(), responseString, Toast.LENGTH_SHORT).show();
-
-                    }
-
-
-                });
-                searchView.setQuery("", false);
-                searchView.setIconified(true);
-                return true;
-            }
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                //textView.setText(newText);
-                return true;
-            }
-        });
 
 
         return super.onCreateOptionsMenu(menu);
@@ -268,9 +206,11 @@ public class MainActivity extends AppCompatActivity
         }
         if (id == R.id.menu_front_init) {
 
-            Intent intent = new Intent(this, FrontDeskInititateActivity.class);
-            startActivity(intent);
-            return true;
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.root,new FragmentAddRequestFrontDesk(), FragmentAddRequestFrontDesk.class.getSimpleName())
+                    .addToBackStack("initiate")
+                    .commit();
 
         } else if (id == R.id.menu_lobby) {
 
