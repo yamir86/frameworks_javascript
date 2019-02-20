@@ -53,7 +53,7 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
     static TextView dateTextView, hourTextView;
 
     CheckBox delayCheckBox;
-    SearchView searchView;
+    EditText searchView;
 
     CardView addRequestLayout;
 
@@ -64,6 +64,8 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
     EditText noteEditText;
 
     AddRequestDTO addRequestDTO;
+
+    Button searchRoomButton;
 
     @Nullable
     @Override
@@ -83,6 +85,10 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
         btnAdd=(Button)rootView.findViewById(R.id.buttonAdd);
         btnAdd.setOnClickListener(this);
 
+        searchRoomButton=rootView.findViewById(R.id.searchButton);
+
+        searchRoomButton.setOnClickListener(this);
+
         addRequestLayout=(CardView)rootView.findViewById(R.id.addRequestLayout);
 
         departmentsSpinner=(Spinner)rootView.findViewById(R.id.spinner);
@@ -92,60 +98,13 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
         addRequestDTO=new AddRequestDTO();
 
 
-        searchView = (SearchView) rootView.findViewById(R.id.roomSearchView);
+        searchView =  rootView.findViewById(R.id.roomSearchView);
         //permite modificar el hint que el EditText muestra por defecto
-        searchView.setQueryHint(getText(R.string.menu_search));
+        /*searchView.setQueryHint(getText(R.string.menu_search));
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                RequestParams rp = new RequestParams();
-                rp.add("mod", "validateRoomNumber");
 
-                roomSearchQuery=query;
-                rp.add("roomNumber", roomSearchQuery);
-
-
-
-                HttpUtil.get( "requests.php",rp,new JsonHttpResponseHandler() {
-                    @Override
-                    public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-
-                        if (statusCode==200){
-
-                            Gson gson= new Gson();
-
-                            RoomDTO[] arr = gson.fromJson(response.toString(), RoomDTO[].class);
-                            List rooms  = new ArrayList(Arrays.asList(arr));
-
-
-
-                            if (!rooms.isEmpty()){
-                                addRequestLayout.setVisibility(View.VISIBLE);
-                                addRequestDTO.setRoomId(((RoomDTO)rooms.get(0)).getRoomId());
-                                retrieveDepartmentsData();
-
-                            }else{
-                                getActivity().getSupportFragmentManager()
-                                        .beginTransaction()
-                                        .replace(R.id.root,new NoResultsFragment(), NoResultsFragment.class.getSimpleName())
-                                        .addToBackStack("noResult")
-                                        .commit();
-                            }
-
-                            return;
-                        }
-
-                    }
-
-                    @Override
-                    public void  onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
-                        //throwable.printStackTrace();
-                        Toast.makeText(getActivity(), responseString, Toast.LENGTH_SHORT).show();
-
-                    }
-
-
-                });
                 return true;
             }
             @Override
@@ -155,7 +114,7 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
             }
         });
 
-
+        */
 
         return rootView;
     }
@@ -183,8 +142,8 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
                         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>
                                 (getActivity(), android.R.layout.simple_spinner_item,
                                         departments);
-                        spinnerArrayAdapter.setDropDownViewResource(android.R.layout
-                                .simple_spinner_dropdown_item);
+                        spinnerArrayAdapter.setDropDownViewResource(R.layout
+                                .spinner_item_layout);
                         departmentsSpinner.setAdapter(spinnerArrayAdapter);
                         departmentsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
@@ -246,8 +205,7 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
                         final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>
                                 (getActivity(), android.R.layout.simple_spinner_item,
                                         departments);
-                        spinnerArrayAdapter.setDropDownViewResource(android.R.layout
-                                .simple_spinner_dropdown_item);
+                        spinnerArrayAdapter.setDropDownViewResource(R.layout.spinner_item_layout);
                         requestsSpinner.setAdapter(spinnerArrayAdapter);
                         requestsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                             @Override
@@ -292,6 +250,60 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
     @Override
     public void onClick(View view) {
         switch (view.getId()){
+
+            case R.id.searchButton:{
+                RequestParams rp = new RequestParams();
+                rp.add("mod", "validateRoomNumber");
+
+                roomSearchQuery=searchView.getText().toString();
+                rp.add("roomNumber", roomSearchQuery);
+
+
+
+                HttpUtil.get( "requests.php",rp,new JsonHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+
+                        if (statusCode==200){
+
+                            Gson gson= new Gson();
+
+                            RoomDTO[] arr = gson.fromJson(response.toString(), RoomDTO[].class);
+                            List rooms  = new ArrayList(Arrays.asList(arr));
+
+
+
+                            if (!rooms.isEmpty()){
+                                addRequestLayout.setVisibility(View.VISIBLE);
+                                addRequestDTO.setRoomId(((RoomDTO)rooms.get(0)).getRoomId());
+                                retrieveDepartmentsData();
+
+                            }else{
+                                getActivity().getSupportFragmentManager()
+                                        .beginTransaction()
+                                        .replace(R.id.root,new NoResultsFragment(), NoResultsFragment.class.getSimpleName())
+                                        .addToBackStack("noResult")
+                                        .commit();
+                            }
+
+                            return;
+                        }
+
+                    }
+
+                    @Override
+                    public void  onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
+                        //throwable.printStackTrace();
+                        Toast.makeText(getActivity(), responseString, Toast.LENGTH_SHORT).show();
+
+                    }
+
+
+                });
+
+                break;
+            }
+
             case R.id.tvDate:{
 
                 DialogFragment newFragment = new DatePickerFragment();

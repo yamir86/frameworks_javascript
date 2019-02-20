@@ -14,6 +14,7 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -37,6 +38,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 import cz.msebera.android.httpclient.Header;
 
 
@@ -46,6 +49,8 @@ public class Login extends AppCompatActivity {
     private EditText inputName,  inputPassword;
     private TextInputLayout inputLayoutName, inputLayoutPassword;
     private TextView btn_loguearse;
+
+    private Spinner hotelChooserSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,6 +81,19 @@ public class Login extends AppCompatActivity {
         inputName = (EditText) findViewById(R.id.username_input);
         inputPassword = (EditText) findViewById(R.id.pass);
         btn_loguearse = findViewById(R.id.btn_loguearse);
+
+        hotelChooserSpinner = findViewById(R.id.hotelSpinner);
+
+        ArrayList<String> hotels=new ArrayList<>();
+
+        hotels.add("Embassy Suits Plainfield");
+
+        final ArrayAdapter<String> spinnerArrayAdapter = new ArrayAdapter<String>
+                (this, android.R.layout.simple_spinner_item,
+                        hotels);
+        spinnerArrayAdapter.setDropDownViewResource(R.layout.spinner_item_layout);
+        hotelChooserSpinner.setAdapter(spinnerArrayAdapter);
+
 
         inputName.addTextChangedListener(new MyTextWatcher(inputName));
         inputPassword.addTextChangedListener(new MyTextWatcher(inputPassword));
