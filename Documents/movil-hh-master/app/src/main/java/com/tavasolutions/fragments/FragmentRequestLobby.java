@@ -1,14 +1,17 @@
 package com.tavasolutions.fragments;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -119,7 +122,7 @@ public class FragmentRequestLobby extends Fragment implements View.OnClickListen
 
         TextView tv_initiateddate,tv_room, tv_request, tv_initiateby, tv_note, tv_delay;
 
-        ImageButton completeBtn;
+        Button completeBtn;
 
         public ImportViewHolder(View view){
             super(view);
@@ -143,43 +146,54 @@ public class FragmentRequestLobby extends Fragment implements View.OnClickListen
             completeBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    RequestParams rp = new RequestParams();
-                    rp.add("mod", "completeRequest");
-                    rp.add("requestRecordId", listaRequest.get(position).getRequestrecordid());
+
+                    new AlertDialog.Builder(getActivity())
+                            .setMessage("Set request statuts as completed?")
+                            .setCancelable(false)
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    RequestParams rp = new RequestParams();
+                                    rp.add("mod", "completeRequest");
+                                    rp.add("requestRecordId", listaRequest.get(position).getRequestrecordid());
 
 
-                    HttpUtil.post( "requests.php",rp,new JsonHttpResponseHandler() {
-                        @Override
-                        public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
-                            Log.e(FragmentRequestLobby.class.getSimpleName(), "onSuccess: " );
+                                    HttpUtil.post( "requests.php",rp,new JsonHttpResponseHandler() {
+                                        @Override
+                                        public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+                                            Log.e(FragmentRequestLobby.class.getSimpleName(), "onSuccess: " );
 
-                            if (statusCode==200){
+                                            if (statusCode==200){
 
-                                populateRecyclerView(response);
+                                                populateRecyclerView(response);
 
-                                return;
-                            }
-
-
-                            try {
-
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                                //Toast.makeText(getApplicationContext(), "ERROR:" +  e.getMessage(), Toast.LENGTH_SHORT).show();
+                                                return;
+                                            }
 
 
-                            }
-                        }
+                                            try {
 
-                        @Override
-                        public void  onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
-                            //throwable.printStackTrace();
-                            // Toast.makeText(getApplicationContext(), responseString, Toast.LENGTH_SHORT).show();
-
-                        }
+                                            } catch (Exception e) {
+                                                e.printStackTrace();
+                                                //Toast.makeText(getApplicationContext(), "ERROR:" +  e.getMessage(), Toast.LENGTH_SHORT).show();
 
 
-                    });
+                                            }
+                                        }
+
+                                        @Override
+                                        public void  onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable){
+                                            //throwable.printStackTrace();
+                                            // Toast.makeText(getApplicationContext(), responseString, Toast.LENGTH_SHORT).show();
+
+                                        }
+
+
+                                    });
+                                }
+                            })
+                            .setNegativeButton("No", null)
+                            .show();
+
                 }
             });
             //tv_note.setText(listaRequest.get(position).getNote());

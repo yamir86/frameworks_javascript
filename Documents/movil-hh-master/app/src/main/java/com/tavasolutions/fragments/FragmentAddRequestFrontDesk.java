@@ -320,7 +320,7 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
                     @Override
                     public void onTimeSet(TimePicker timePicker, int selectedHour, int selectedMinute) {
 
-                        hourTextView.setText( selectedHour + ":" + selectedMinute);
+                        showTime(selectedHour, selectedMinute);
                     }
                 }, hour, minute, true);//Yes 24 hour time
                 mTimePicker.setTitle("Select Time");
@@ -431,6 +431,34 @@ public class FragmentAddRequestFrontDesk extends Fragment implements View.OnClic
         return dateTextView.getText().toString().concat(" ").concat(hourTextView.getText().toString());
 
 
+    }
+
+
+    public void showTime(int hour, int min) {
+
+        String format;
+        String hourStr=String.valueOf(hour);
+        String minuteStr = String.valueOf(min);
+
+        if (hour == 0) {
+            hour += 12;
+            format = "AM";
+        } else if (hour == 12) {
+            format = "PM";
+        } else if (hour > 12) {
+            hour -= 12;
+            format = "PM";
+        } else {
+            format = "AM";
+        }
+
+        if (min<=9)
+            minuteStr="0".concat(String.valueOf(min));
+        if (hour<=9)
+            hourStr="0".concat(String.valueOf(hour));
+
+        hourTextView.setText(new StringBuilder().append(hourStr).append(" : ").append(minuteStr)
+                .append(" ").append(format));
     }
 
 
