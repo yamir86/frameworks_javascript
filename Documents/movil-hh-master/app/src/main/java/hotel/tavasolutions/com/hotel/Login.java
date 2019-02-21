@@ -76,8 +76,8 @@ public class Login extends AppCompatActivity {
         //////////////spinner.setAdapter(adapter);
 
 
-        inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_usuario);
-        inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
+        //inputLayoutName = (TextInputLayout) findViewById(R.id.input_layout_usuario);
+        //inputLayoutPassword = (TextInputLayout) findViewById(R.id.input_layout_password);
         inputName = (EditText) findViewById(R.id.username_input);
         inputPassword = (EditText) findViewById(R.id.pass);
         btn_loguearse = findViewById(R.id.btn_loguearse);
@@ -230,14 +230,14 @@ public class Login extends AppCompatActivity {
         }
 
         public void afterTextChanged(Editable editable) {
-            switch (view.getId()) {
+            /*switch (view.getId()) {
                 case R.id.input_usuario:
                     validateName();
                     break;
                 case R.id.input_password:
                     validatePassword();
                     break;
-            }
+            }*/
         }
     }
 }
