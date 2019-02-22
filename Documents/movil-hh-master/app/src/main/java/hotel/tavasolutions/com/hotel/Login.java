@@ -58,18 +58,14 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        TextView txt = (TextView) findViewById(R.id.textView1);
-        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/fontawesome-webfont.ttf");
-        txt.setTypeface(font);
-        txt.setText(getString(R.string.fa_jsfiddle));
 
         /*
         Spinner spinner = (Spinner) findViewById(R.id.planets_spinner);
         */
 
 // Create an ArrayAdapter using the string array and a default spinner layout
-       //////////// ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                /////////////R.array.planets_array, android.R.layout.simple_spinner_item);
+        //////////// ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+        /////////////R.array.planets_array, android.R.layout.simple_spinner_item);
 // Specify the layout to use when the list of choices appears
         ////////////adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
@@ -159,7 +155,7 @@ public class Login extends AppCompatActivity {
                     //JSONObject serverResp = new JSONObject(response.toString());
                 } catch (Exception e) {
                     //e.printStackTrace();
-                     Toast.makeText(getApplicationContext(), "ERROR:" +  e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "ERROR:" +  e.getMessage(), Toast.LENGTH_SHORT).show();
 
 
                 }

@@ -620,5 +620,7 @@
     <string name="yes">Yes</string>
     <string name="delay">Delay</string>
     <string name="ingresar">Ingresar</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
 
 </resources>
