@@ -1,0 +1,253 @@
+/* 
+  Localizable.strings
+  ESPIDY
+
+  Created by FreddyA on 12/13/16.
+  Copyright © 2016 Kretum. All rights reserved.
+*/
+
+
+"TIRED OF" = "SIN TIEMPO";
+
+
+"REQUEST" = "SOLICITA";
+
+
+"SAVE TIME" = "AHORRA";
+
+
+"WASTE TIME?" = "PARA TUS DILIGENCIAS?";
+
+
+"YOUR SERVICE" = "TU MENSAJERO ESPIDY";
+
+
+"WITH ESPIDY" = "TIEMPO Y DINERO CON ESPIDY";
+
+
+"LOST YOUR PASSWORD?" = "PERDISTE TU CONTRASEÑA?";
+
+
+"NEED AN ACCOUNT?" = "NECESITAS UNA CUENTA?";
+
+
+"SKIP THIS STEP" = "SALTA ESTE PASO";
+
+
+"WE CHARGE ONLY BY CREDIT CARD AFTER YOUR SHIPMENT HAS ARRIVED QUIET YOUR DATA IS SAFE!" = "EL COBRO SOLO SE HARÁ POR TARJETA DE CRÉDITO DESPUES DE TERMINAR EL SERVICIO.";
+
+
+"OR COMPLETE THE FIELDS PRESENTED BELOW" = "O COMPLETA LOS ESPACIOS AQUÍ ABAJO";
+
+
+"CREATE ACCOUNT!" = "REGISTRO DE TARJETA!";
+
+
+"DROP OFF" = "DESTINO";
+
+
+"SHIPMENT IN PROGRESS" = "ENVÍO EN PROCESO";
+
+
+"CONFIRM YOUR SHIPPING" = "CONFIRMAR ENVÍO";
+
+
+"Enter Pick Up Address" = "el origen y destino son requeridos";
+
+
+"PAYMENTS" = "PAGOS";
+
+
+"HISTORY" = "HISTORIAL";
+
+
+"RedeemCode" = "CANJEAR CÓDIGO";
+
+
+"ENTER THE GIFT CODE" = "INGRESE EL CÓDIGO DE REGALO";
+
+"ENTER THE AMOUNT" = "INGRESE EL MONTO";
+
+"ATTENTION!" = "¡ATENCIÓN!";
+
+"HELP" = "AYUDA";
+
+
+
+"SETTINGS" = "CONFIGURACIONES";
+
+
+"PICK UP HERE" = "BUSCAR AQUÍ";
+
+
+"WELCOME!" = "BIENVENIDO!";
+
+
+"BIKE" = "PROXIMAMENTE";
+
+
+"MOTORCYCLE" = "MOTO";
+
+
+"CAR" = "CARRO";
+
+
+"DONE" = "OK";
+
+
+"CANCEL" = "CANCELAR";
+
+
+"Driver:" = "Conductor:";
+"Distance:" = "Distancia:";
+"Time:" = "Tiempo:";
+"Price:" = "Precio:";
+"payment:" = "Pago:";
+
+
+"ADD A NEW CREDIT CARD!" = "AGREGAR NUEVA TARJETA!";
+
+
+"ADD!" = "AGREGAR!";
+
+
+"SIGN OUT" = "CERRAR SESION";
+
+
+"SET YOURSELF AWAY" = "DESCONECTAR";
+
+
+"SET ME VISIBLE" = "CONECTAR";
+
+
+"Take Photo" = "Toma una Foto";
+
+
+"Choose From Library" = "Selecciona de la Librería";
+
+
+"The name is required" = "El nombre es requerido";
+
+
+"Invalid email" = "El email es invalido";
+
+
+"The phone is required" = "el teléfono es requerido";
+
+
+"IN" = "EN";
+
+
+"CANCEL ORDER!" = "CANCELAR ORDEN!";
+
+
+"WAIT A FEW SECONDS" = "BUSCANDO";
+
+
+"WE'RE LOOKING SOMEBODY" = "TU ESPIDY MENSAJERO";
+
+
+"NEAR TO YOU" = "MAS CERCANO";
+
+
+"REQUEST SERVICE" = "SOLICITANTE";
+
+
+"CLIENT:" = "CLIENTE:";
+
+
+"DRIVER:" = "MENSAJERO:";
+
+
+"Shipped Canceled" = "Envío Cancelado";
+
+
+"The shipment has been canceled by the client." = "El envío ha sido cancelado por el cliente.";
+
+
+"The shipment has been canceled by the driver." = "El envío ha sido cancelado por el mensajero.";
+
+
+"SWIPE TO FINISH!" = "DESLIZA PARA FINALIZAR!";
+
+
+"SEND FEEDBACK" = "CALIFICA EL SERVICIO";
+
+
+"MODEL:" = "MODELO:";
+
+
+"NEW SERVICE" = "NUEVO SERVICIO";
+
+
+"REQUESTED IN" = "SOLICITADO EN";
+
+
+"ACCEPT!" = "ACEPTAR!";
+
+
+"REJECT!" = "RECHAZAR!";
+
+
+"MISSED SERVICES: 0" = "SERVICIOS PERDIDOS: 0";
+
+
+"IF YOU CONFIRM THIS SHIPMENT, YOU AGREE TO THE TERMS AND CONDITIONS OF ESPIDY" = "SI CONFIRMA ESTE ENVÍO, USTED ESTARÁ DE ACUERDO CON LOS TÉRMINOS Y CONDICIONES DE ESPIDY.";
+
+
+"January" = "Enero";
+"February" = "Febrero";
+"March" = "Marzo";
+"April" = "Abril";
+"May" = "Mayo";
+"June" = "Junio";
+"July" = "Julio";
+"August" = "Agosto";
+"September" = "Septiembre";
+"October" = "Octubre";
+"November" = "Noviembre";
+"December" = "Diciembre";
+
+
+"REMEMBER YOUR PASSWORD" = "RECUPERA TU CONTRASEÑA";
+
+
+
+"We can help you reset your password and security information, please enter your email" = "Nosotros podemos ayudarte a recuperar tu contraseña e información de seguridad, por favor introduce tu email.";
+
+
+"We will send you an email for the instructions that you must follow to recover your password." = "Te enviamos un email, con las instrucciones para recuperar tu contraseña";
+
+
+"ARE YOU SURE YOU DON'T WANT TO MAKE MORE MONEY?" = "ESTAS SEGURO? SEGUIR CONECTADO SIGNIFICA HACER MAS DINERO.";
+
+
+"You must add a credit card to request a service. Add one to continue" = "Debes agregar tarjeta de crédito para solicitar un servicio. Agrega una para continuar";
+
+"WRITE HERE" = "ESCRIBE AQUÍ";
+
+"¡ATENTION!" = "¡ALERTA!";
+
+"INSERT CODE" = "INGRESE EL CODIGO";
+
+"SERVICE IS NOT IN PROGRESS" = "EL SERVICIO NO ESTÁ EN CURSO";
+
+"SERVICE_IN_PAUSE" = "EL SERVICIO HA SIDO PAUSADO";
+
+"SERVICE_IN_PROGRESS" = "EL SERVICIO ESTÁ EN CURSO DE NUEVO";
+
+"error conection" = "ERROR DE CONEXIÓN";
+
+"The shipment has been paused" = "El envío ha sido pausado";
+
+"The shipment has been resumed" = "El envío ha sido reanudado";
+
+"CANCELLED_BY_USER" =  "Buy instant canceled";
+
+"ACCEPTED_BY_USER" = "Buy instant accepted";
+
+"No Comments" = "No hay comentarios";
+
+"You can not paused shipment" = "No puedes pausar el envío, debe comenzar primero el envío";
+
+"Shipment has already been taken or cancelled" = "Este envío ya ha sido aceptado o cancelado por el cliente";

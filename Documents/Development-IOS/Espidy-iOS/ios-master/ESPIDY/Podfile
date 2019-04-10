@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.3'
+
+target 'ESPIDY' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ESPIDY
+  pod 'FBSDKCoreKit', '4.39.1'
+  pod 'FBSDKLoginKit', '4.39.1'
+  pod 'Alamofire', '~> 4.0'
+  pod 'CardIO', '5.4.1'
+  pod 'Caishen'
+  pod 'ActiveLabel'
+  pod 'GoogleMaps', '2.1.0'
+  pod 'GooglePlaces', '2.1.0'
+  pod 'Firebase/Core', '3.9.0'
+  pod 'Firebase/Messaging', '3.9.0'
+  pod 'SwiftyJSON'
+  pod 'IQKeyboardManagerSwift'
+  pod 'VisualEffectView'
+  pod 'PKHUD'
+  pod 'SwiftCop'
+  
+  pod 'LTMorphingLabel'
+  pod 'Kingfisher'
+    
+end

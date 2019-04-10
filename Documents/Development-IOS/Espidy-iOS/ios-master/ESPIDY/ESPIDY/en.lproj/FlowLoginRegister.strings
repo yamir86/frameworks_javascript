@@ -1,0 +1,48 @@
+
+/* Class = "UITextField"; placeholder = "EMAIL"; ObjectID = "CdA-4u-9d8"; */
+"CdA-4u-9d8.placeholder" = "EMAIL";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE!"; ObjectID = "CdV-hi-kyN"; */
+"CdV-hi-kyN.normalTitle" = "CONTINUE!";
+
+/* Class = "UITextField"; placeholder = "FULL NAME"; ObjectID = "DHr-7o-DVi"; */
+"DHr-7o-DVi.placeholder" = "FULL NAME";
+
+/* Class = "UITextField"; placeholder = "PASSWORD"; ObjectID = "DwN-dX-p6i"; */
+"DwN-dX-p6i.placeholder" = "PASSWORD";
+
+/* Class = "UIButton"; normalTitle = "SCAN YOUR CARD"; ObjectID = "EiY-5l-NAj"; */
+"EiY-5l-NAj.normalTitle" = "SCAN YOUR CARD";
+
+/* Class = "UITextField"; placeholder = "CARD NUMBER"; ObjectID = "G8e-Fm-yeR"; */
+"G8e-Fm-yeR.placeholder" = "CARD NUMBER";
+
+/* Class = "UITextField"; placeholder = "CVC NUMBER"; ObjectID = "GBx-9k-9u3"; */
+"GBx-9k-9u3.placeholder" = "CVC NUMBER";
+
+/* Class = "UILabel"; text = "WE CHARGE ONLY BY CREDIT CARD AFTER YOUR SHIPMENT HAS ARRIVED QUIET YOUR DATA IS SAFE!"; ObjectID = "H2d-Pm-4k9"; */
+"H2d-Pm-4k9.text" = "WE CHARGE ONLY BY CREDIT CARD AFTER YOUR SHIPMENT HAS ARRIVED QUIET YOUR DATA IS SAFE!";
+
+/* Class = "UITextField"; placeholder = "FULL NAME"; ObjectID = "Hsn-5w-VLR"; */
+"Hsn-5w-VLR.placeholder" = "FULL NAME";
+
+/* Class = "UITextField"; placeholder = "PASSWORD"; ObjectID = "Jly-Xg-2Xd"; */
+"Jly-Xg-2Xd.placeholder" = "PASSWORD";
+
+/* Class = "UIButton"; normalTitle = "ENTER!"; ObjectID = "OxL-IJ-t1r"; */
+"OxL-IJ-t1r.normalTitle" = "ENTER!";
+
+/* Class = "UIButton"; normalTitle = "CREATE ACCOUNT!"; ObjectID = "W9w-DV-a7j"; */
+"W9w-DV-a7j.normalTitle" = "CREATE ACCOUNT!";
+
+/* Class = "UILabel"; text = "OR COMPLETE THE FIELDS PRESENTED BELOW"; ObjectID = "bhy-mj-5vF"; */
+"bhy-mj-5vF.text" = "OR COMPLETE THE FIELDS PRESENTED BELOW";
+
+/* Class = "UIButton"; normalTitle = "00/0000"; ObjectID = "bi0-o3-lq4"; */
+"bi0-o3-lq4.normalTitle" = "00/0000";
+
+/* Class = "UITextField"; placeholder = "EMAIL"; ObjectID = "hIq-uM-Ya2"; */
+"hIq-uM-Ya2.placeholder" = "EMAIL";
+
+/* Class = "UITextField"; placeholder = "TELEPHONE"; ObjectID = "pjl-KE-QLa"; */
+"pjl-KE-QLa.placeholder" = "TELEPHONE";

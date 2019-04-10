@@ -1,0 +1,135 @@
+PODS:
+  - ActiveLabel (1.0.1)
+  - Alamofire (4.8.0)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Caishen (2.2)
+  - CardIO (5.4.1)
+  - FBSDKCoreKit (4.39.1):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.1):
+    - FBSDKCoreKit
+  - Firebase/Core (3.9.0):
+    - FirebaseAnalytics (= 3.5.1)
+    - FirebaseCore (= 3.4.4)
+  - Firebase/Messaging (3.9.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 1.2.1)
+  - FirebaseAnalytics (3.5.1):
+    - FirebaseCore (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseCore (3.4.4):
+    - GoogleInterchangeUtilities (~> 1.2)
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseInstanceID (1.0.9)
+  - FirebaseMessaging (1.2.1):
+    - FirebaseAnalytics (~> 3.4)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+  - GoogleInterchangeUtilities (1.2.2):
+    - GoogleSymbolUtilities (~> 1.1)
+  - GoogleMaps (2.1.0):
+    - GoogleMaps/Maps (= 2.1.0)
+  - GoogleMaps/Base (2.1.0)
+  - GoogleMaps/Maps (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GooglePlaces (2.1.0):
+    - GoogleMaps/Base (= 2.1.0)
+  - GoogleSymbolUtilities (1.1.2)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/Logger (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - "GoogleToolboxForMac/NSData+zlib (2.2.0)":
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - IQKeyboardManagerSwift (6.2.0)
+  - Kingfisher (4.10.1)
+  - LTMorphingLabel (0.7.0)
+  - PKHUD (5.2.0)
+  - SwiftCop (1.1.0)
+  - SwiftyJSON (4.2.0)
+  - VisualEffectView (3.1.0)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - Alamofire (~> 4.0)
+  - Caishen
+  - CardIO (= 5.4.1)
+  - FBSDKCoreKit (= 4.39.1)
+  - FBSDKLoginKit (= 4.39.1)
+  - Firebase/Core (= 3.9.0)
+  - Firebase/Messaging (= 3.9.0)
+  - GoogleMaps (= 2.1.0)
+  - GooglePlaces (= 2.1.0)
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - LTMorphingLabel
+  - PKHUD
+  - SwiftCop
+  - SwiftyJSON
+  - VisualEffectView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActiveLabel
+    - Alamofire
+    - Bolts
+    - Caishen
+    - CardIO
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - GoogleInterchangeUtilities
+    - GoogleMaps
+    - GooglePlaces
+    - GoogleSymbolUtilities
+    - GoogleToolboxForMac
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - LTMorphingLabel
+    - PKHUD
+    - SwiftCop
+    - SwiftyJSON
+    - VisualEffectView
+
+SPEC CHECKSUMS:
+  ActiveLabel: b8b2396fe25308d563601437d6605bf691c3b5db
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Caishen: 0bb9922ae5b28cacdb59d12aaae6da661c1bb452
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  FBSDKCoreKit: f442aa96179cc9b382bb4abeb7e340a47cca8f91
+  FBSDKLoginKit: c3079d9a4db27c492287b1eed7a4272b28cf8a59
+  Firebase: ff77ffb77b317c3720fef57a60e9335cebf962e6
+  FirebaseAnalytics: 6e58fc9b397664369ac7617fb0ba93fab6ba7b5b
+  FirebaseCore: d0ed25f27b6f9158eccc439f1be6f92e81207e28
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseMessaging: acf66347e43c5637c697060c3001d25c809a4131
+  GoogleInterchangeUtilities: d5bc4d88d5b661ab72f9d70c58d02ca8c27ad1f7
+  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
+  GooglePlaces: 16e96266483b8010e9f275399403647978523c86
+  GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  LTMorphingLabel: 22147fb1ec2b0306537ccc348b36ea8617179b03
+  PKHUD: dd5357ac65f26115c35c4a68e9b328053326c5fe
+  SwiftCop: 52c1c097f0549f605b986832c1661f3275b82df2
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  VisualEffectView: 922eedf8d7d7e776a367ac11e0a4d4a0b2ba3545
+
+PODFILE CHECKSUM: 394941c7ad8e0a52f7368913b12568027d56a78d
+
+COCOAPODS: 1.5.3

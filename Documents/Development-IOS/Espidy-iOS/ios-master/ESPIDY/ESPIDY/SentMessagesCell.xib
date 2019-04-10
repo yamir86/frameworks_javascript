@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentMessagesCell" rowHeight="192" id="KGk-i7-Jjw" customClass="SentMessagesCell" customModule="ESPIDY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-Qi-74V" customClass="DesignableUIView" customModule="ESPIDY" customModuleProvider="target">
+                        <rect key="frame" x="40" y="8" width="272" height="175.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FL6-IV-oBW">
+                                <rect key="frame" x="8" y="0.0" width="256" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="OuF-z1-GPk"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4a-Ue-cFh">
+                                <rect key="frame" x="8" y="8" width="256" height="159.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="zu9-Sl-Rjf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FL6-IV-oBW" firstAttribute="top" secondItem="UKC-Qi-74V" secondAttribute="top" id="9kc-Ko-UGE"/>
+                            <constraint firstItem="i4a-Ue-cFh" firstAttribute="top" secondItem="FL6-IV-oBW" secondAttribute="bottom" constant="8" id="EOz-p3-XSF"/>
+                            <constraint firstAttribute="bottom" secondItem="i4a-Ue-cFh" secondAttribute="bottom" constant="8" id="O0A-FF-JaK"/>
+                            <constraint firstAttribute="trailing" secondItem="i4a-Ue-cFh" secondAttribute="trailing" constant="8" id="XmW-4V-xMG"/>
+                            <constraint firstAttribute="trailing" secondItem="FL6-IV-oBW" secondAttribute="trailing" constant="8" id="cew-iu-muS"/>
+                            <constraint firstItem="i4a-Ue-cFh" firstAttribute="leading" secondItem="UKC-Qi-74V" secondAttribute="leading" constant="8" id="k8z-sS-3HD"/>
+                            <constraint firstItem="FL6-IV-oBW" firstAttribute="leading" secondItem="UKC-Qi-74V" secondAttribute="leading" constant="8" id="pVj-Tl-4eI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UKC-Qi-74V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="26H-bO-l3V"/>
+                    <constraint firstAttribute="trailing" secondItem="UKC-Qi-74V" secondAttribute="trailing" constant="8" id="BsR-R5-LuW"/>
+                    <constraint firstAttribute="bottom" secondItem="UKC-Qi-74V" secondAttribute="bottom" constant="8" id="PYx-bR-vw4"/>
+                    <constraint firstItem="UKC-Qi-74V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Xxs-UZ-7g1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="heightPhoto" destination="OuF-z1-GPk" id="VBK-Mm-ekm"/>
+                <outlet property="photo" destination="FL6-IV-oBW" id="Iro-U3-40p"/>
+                <outlet property="textView" destination="i4a-Ue-cFh" id="16Z-ph-jOE"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="13"/>
+        </tableViewCell>
+    </objects>
+</document>

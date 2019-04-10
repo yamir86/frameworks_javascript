@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IncomingMessagesCell" rowHeight="192" id="Kk9-oq-pFV" customClass="IncomingMessagesCell" customModule="ESPIDY" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kk9-oq-pFV" id="Kwt-9m-U49">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1y-5c-62q" customClass="DesignableUIView" customModule="ESPIDY" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="272" height="175.5"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCW-ql-T1d">
+                                <rect key="frame" x="8" y="8" width="256" height="159"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="zd7-dr-3GI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oH1-J2-SaK">
+                                <rect key="frame" x="8" y="0.0" width="256" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="paM-dT-BuG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BCW-ql-T1d" firstAttribute="leading" secondItem="v1y-5c-62q" secondAttribute="leading" constant="8" id="HKW-JE-fIB"/>
+                            <constraint firstItem="oH1-J2-SaK" firstAttribute="leading" secondItem="v1y-5c-62q" secondAttribute="leading" constant="8" id="UWY-Fi-9NZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oH1-J2-SaK" secondAttribute="trailing" constant="8" id="aLl-ln-oHV"/>
+                            <constraint firstItem="BCW-ql-T1d" firstAttribute="top" secondItem="oH1-J2-SaK" secondAttribute="bottom" constant="8" id="dGf-T8-HQC"/>
+                            <constraint firstAttribute="bottom" secondItem="BCW-ql-T1d" secondAttribute="bottom" constant="8" id="jqI-WR-k6E"/>
+                            <constraint firstItem="oH1-J2-SaK" firstAttribute="top" secondItem="v1y-5c-62q" secondAttribute="top" id="w6a-oU-f9A"/>
+                            <constraint firstAttribute="trailing" secondItem="BCW-ql-T1d" secondAttribute="trailing" constant="8" id="xYm-2N-ThG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="v1y-5c-62q" secondAttribute="trailing" constant="40" id="1QF-gr-2Gu"/>
+                    <constraint firstAttribute="bottom" secondItem="v1y-5c-62q" secondAttribute="bottom" constant="8" id="95Z-vI-VGZ"/>
+                    <constraint firstItem="v1y-5c-62q" firstAttribute="top" secondItem="Kwt-9m-U49" secondAttribute="top" constant="8" id="eD5-51-nQ8"/>
+                    <constraint firstItem="v1y-5c-62q" firstAttribute="leading" secondItem="Kwt-9m-U49" secondAttribute="leading" constant="8" id="sML-7o-Pe2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="O3L-e1-RrH"/>
+            <connections>
+                <outlet property="heightPhoto" destination="paM-dT-BuG" id="phO-6l-N1b"/>
+                <outlet property="photo" destination="oH1-J2-SaK" id="fJx-wz-EL2"/>
+                <outlet property="textView" destination="BCW-ql-T1d" id="Akj-lG-4gf"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="13"/>
+        </tableViewCell>
+    </objects>
+</document>

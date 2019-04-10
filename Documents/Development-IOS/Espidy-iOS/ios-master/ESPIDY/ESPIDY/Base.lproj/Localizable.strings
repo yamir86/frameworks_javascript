@@ -1,0 +1,250 @@
+/* 
+  Localizable.strings
+  ESPIDY
+
+  Created by FreddyA on 12/13/16.
+  Copyright © 2016 Kretum. All rights reserved.
+*/
+
+
+"TIRED OF" = "TIRED OF";
+
+
+"REQUEST" = "REQUEST";
+
+
+"SAVE TIME" = "SAVE TIME";
+
+
+"WASTE TIME?" = "WASTING TIME?";
+
+
+"YOUR SERVICE" = "YOUR SERVICE";
+
+
+"WITH ESPIDY" = "WITH ESPIDY";
+
+
+"LOST YOUR PASSWORD?" = "LOST YOUR PASSWORD?";
+
+
+"NEED AN ACCOUNT?" = "NEED AN ACCOUNT?";
+
+
+"SKIP THIS STEP" = "SKIP THIS STEP";
+
+
+"WE CHARGE ONLY BY CREDIT CARD AFTER YOUR SHIPMENT HAS ARRIVED QUIET YOUR DATA IS SAFE!" = "WE CHARGE ONLY BY CREDIT CARD AFTER YOUR SHIPMENT HAS ARRIVED QUIET YOUR DATA IS SAFE!";
+
+
+"OR COMPLETE THE FIELDS PRESENTED BELOW" = "OR COMPLETE THE FIELDS PRESENTED BELOW";
+
+
+"CREATE ACCOUNT!" = "CREATE ACCOUNT!";
+
+
+"DROP OFF" = "DROP OFF";
+
+
+"SHIPMENT IN PROGRESS" = "SHIPMENT IN PROGRESS";
+
+
+"CONFIRM YOUR SHIPPING" = "CONFIRM YOUR SHIPPING";
+
+
+"Enter Pick Up Address" = "Enter Pick Up and Drop Off Address";
+
+
+"PAYMENTS" = "PAYMENTS";
+
+
+"HISTORY" = "HISTORY";
+
+
+"HELP" = "HELP";
+
+
+"SETTINGS" = "SETTINGS";
+
+
+"RedeemCode" = "REDEEM CODE";
+
+
+"ENTER THE GIFT CODE" = "ENTER THE GIFT CODE";
+
+"ENTER THE AMOUNT" = "ENTER THE AMOUNT";
+
+"ATTENTION!" = "ATTENTION!";
+
+
+"PICK UP HERE" = "PICK UP HERE";
+
+
+"WELCOME!" = "WELCOME!";
+
+
+"BIKE" = "COMING SOON";
+
+
+"MOTORCYCLE" = "MOTO";
+
+
+"CAR" = "CAR";
+
+
+"DONE" = "DONE";
+
+
+"CANCEL" = "CANCEL";
+
+"Driver:" = "Driver:";
+"Distance:" = "Distance:";
+"Time:" = "Time:";
+"Price:" = "Price:";
+"payment:" = "payment:";
+
+
+"ADD A NEW CREDIT CARD!" = "ADD A NEW CREDIT CARD!";
+
+
+"ADD!" = "ADD!";
+
+
+"SIGN OUT" = "SIGN OUT";
+
+
+"SET YOURSELF AWAY" = "SET YOURSELF AWAY";
+
+
+"SET ME VISIBLE" = "SET ME VISIBLE";
+
+
+"Take Photo" = "Take Photo";
+
+
+"Choose From Library" = "Choose From Library";
+
+
+"The name is required" = "The name is required";
+
+
+"Invalid email" = "Invalid email";
+
+
+"The phone is required" = "The phone is required";
+
+
+"IN" = "IN";
+
+
+"CANCEL ORDER!" = "CANCEL ORDER!";
+
+
+"WAIT A FEW SECONDS" = "WAIT A FEW SECONDS";
+
+
+"WE'RE LOOKING SOMEBODY" = "WE'RE LOOKING SOMEBODY";
+
+
+"NEAR TO YOU" = "NEAR TO YOU";
+
+
+"REQUEST SERVICE" = "REQUEST SERVICE";
+
+
+"CLIENT:" = "CLIENT:";
+
+
+"DRIVER:" = "DRIVER:";
+
+
+"Shipped Canceled" = "Shipped Canceled";
+
+
+"The shipment has been canceled by the client." = "The shipment has been canceled by the client.";
+
+
+"The shipment has been canceled by the driver." = "The shipment has been canceled by the driver.";
+
+
+"SWIPE TO FINISH!" = "SWIPE TO FINISH!";
+
+
+"SEND FEEDBACK" = "SEND FEEDBACK";
+
+
+"MODEL:" = "MODEL:";
+
+
+"NEW SERVICE" = "NEW SERVICE";
+
+
+"REQUESTED IN" = "REQUESTED IN";
+
+
+"ACCEPT!" = "ACCEPT!";
+
+
+"REJECT!" = "REJECT!";
+
+
+"MISSED SERVICES: 0" = "MISSED SERVICES: 0";
+
+
+"IF YOU CONFIRM THIS SHIPMENT, YOU AGREE TO THE TERMS AND CONDITIONS OF ESPIDY" = "IF YOU CONFIRM THIS SHIPMENT, YOU AGREE TO THE TERMS AND CONDITIONS OF ESPIDY";
+
+
+"January" = "January";
+"February" = "February";
+"March" = "March";
+"April" = "April";
+"May" = "May";
+"June" = "June";
+"July" = "July";
+"August" = "August";
+"September" = "September";
+"October" = "October";
+"November" = "November";
+"December" = "December";
+
+
+"REMEMBER YOUR PASSWORD" = "REMEMBER YOUR PASSWORD";
+
+
+
+"We can help you reset your password and security information, please enter your email" = "We can help you reset your password and security information, please enter your email";
+
+
+"We will send you an email for the instructions that you must follow to recover your password." = "We will send you an email for the instructions that you must follow to recover your password.";
+
+"ARE YOU SURE YOU DON'T WANT TO MAKE MORE MONEY?" = "ARE YOU SURE YOU DON'T WANT TO MAKE MORE MONEY?";
+
+"You must add a credit card to request a service. Add one to continue" = "You must add a credit card to request a service. Add one to continue";
+
+"WRITE HERE" = "WRITE HERE";
+
+"¡ATENTION!" = "¡ATENTION!";
+
+"INSERT CODE" = "INSERT CODE";
+
+"SERVICE IS NOT IN PROGRESS" = "SERVICE IS NOT IN PROGRESS";
+
+"SERVICE_IN_PAUSE" = "THE SERVICE HAS BEEN PAUSED";
+
+"SERVICE_IN_PROGRESS" = "THE SERVICE IS IN PROGRESS AGAIN";
+
+"error conection" = "CONNECTION ERROR";
+
+"The shipment has been paused" = "The shipment has been paused";
+
+"The shipment has been resumed" = "The shipment has been resumed";
+
+"CANCELLED_BY_USER" =  "Buy instant canceled";
+
+"ACCEPTED_BY_USER" = "Buy instant accepted";
+
+"No Comments" = "No Comments";
+
+"You can not paused shipment" = "You can not pause the shipment, you must first start shipping";
+
+"Shipment has already been taken or cancelled" = "Shipment has already been taken or cancelled";

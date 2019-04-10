@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yc6-lK-jUG">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.otf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="OCL-UR-BTK">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yc6-lK-jUG" customClass="OnboardingPageViewController" customModule="ESPIDY" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJP-3X-2GZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="438" y="894"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="ASw-CI-ieh">
+            <objects>
+                <viewController storyboardIdentifier="PageContent" id="6uM-dj-hCh" customClass="OnboardingViewController" customModule="ESPIDY" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Z1n-9t-ayq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gk2-2G-cDZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WU8-Mf-WYr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-wizard" translatesAutoresizingMaskIntoConstraints="NO" id="HFd-2u-WtD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WSW-UV-Pn3">
+                                <rect key="frame" x="32" y="377" width="256" height="100"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ev5-2q-4W1">
+                                        <rect key="frame" x="70" y="0.0" width="116" height="3"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.37647058820000001" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="jwS-re-Q0i"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YxE-2a-gUm">
+                                        <rect key="frame" x="42" y="35" width="172.5" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="TIRED OF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Nz-Yr-mBu">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="44"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat-Bold" pointSize="36"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.22352941179999999" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WASTE TIME?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkS-Lw-mmr">
+                                                <rect key="frame" x="26.5" y="44" width="119" height="21"/>
+                                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat-Regular" pointSize="17"/>
+                                                <color key="textColor" red="0.21960784310000001" green="0.22352941179999999" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ev5-2q-4W1" secondAttribute="trailing" constant="70" id="0Ks-2d-Y0r"/>
+                                    <constraint firstItem="ev5-2q-4W1" firstAttribute="leading" secondItem="WSW-UV-Pn3" secondAttribute="leading" constant="70" id="J5U-xT-6Dm"/>
+                                    <constraint firstItem="YxE-2a-gUm" firstAttribute="top" secondItem="ev5-2q-4W1" secondAttribute="bottom" constant="32" id="jys-dK-bIZ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="view1-wizard" translatesAutoresizingMaskIntoConstraints="NO" id="Tsk-43-nIl">
+                                <rect key="frame" x="27.5" y="52" width="265" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="950" id="6Bk-nx-HGj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="aSb-tg-q0p"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="950" id="aiK-Nc-kz7"/>
+                                    <constraint firstAttribute="width" secondItem="Tsk-43-nIl" secondAttribute="height" multiplier="1:1" id="hdX-jp-q72"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="224" id="y5U-ae-Zfa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WSW-UV-Pn3" firstAttribute="leading" secondItem="WU8-Mf-WYr" secondAttribute="leading" constant="32" id="2RD-QA-pYz"/>
+                            <constraint firstAttribute="trailing" secondItem="HFd-2u-WtD" secondAttribute="trailing" id="Kil-IL-8gQ"/>
+                            <constraint firstItem="Gk2-2G-cDZ" firstAttribute="top" secondItem="HFd-2u-WtD" secondAttribute="bottom" id="N0U-h2-X4m"/>
+                            <constraint firstItem="Tsk-43-nIl" firstAttribute="centerX" secondItem="WU8-Mf-WYr" secondAttribute="centerX" id="bgo-El-fB6"/>
+                            <constraint firstAttribute="trailing" secondItem="WSW-UV-Pn3" secondAttribute="trailing" constant="32" id="dKV-zI-aQU"/>
+                            <constraint firstItem="HFd-2u-WtD" firstAttribute="top" secondItem="WU8-Mf-WYr" secondAttribute="top" id="f6L-O2-w3U"/>
+                            <constraint firstItem="WSW-UV-Pn3" firstAttribute="top" secondItem="Tsk-43-nIl" secondAttribute="bottom" constant="60" id="hbu-uA-RkP"/>
+                            <constraint firstItem="HFd-2u-WtD" firstAttribute="leading" secondItem="WU8-Mf-WYr" secondAttribute="leading" id="opz-az-lP0"/>
+                            <constraint firstItem="Tsk-43-nIl" firstAttribute="top" secondItem="Z1n-9t-ayq" secondAttribute="bottom" constant="32" id="yui-DC-Sdc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="subtitleLabel" destination="QkS-Lw-mmr" id="aba-CX-98h"/>
+                        <outlet property="titleLabel" destination="4Nz-Yr-mBu" id="2tf-jT-tMO"/>
+                        <outlet property="wizardImageView" destination="Tsk-43-nIl" id="wCi-1I-Lvi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qB5-Ju-nIL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="894"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg-wizard" width="320" height="568"/>
+        <image name="view1-wizard" width="265" height="265"/>
+    </resources>
+</document>
